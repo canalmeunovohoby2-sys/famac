@@ -1,0 +1,88 @@
+.differentials {
+  position: relative;
+}
+
+.differentials__head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: clamp(36px, 4.5vw, 60px);
+}
+
+.differentials__list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.differentials__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: clamp(24px, 2.6vw, 34px) clamp(18px, 2vw, 26px);
+}
+
+.differentials__item + .differentials__item {
+  border-left: 1px solid var(--paper-line);
+}
+
+.differentials__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 2px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-slow) var(--ease);
+}
+
+.differentials__item:hover .differentials__bar {
+  transform: scaleX(1);
+}
+
+.differentials__index {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  color: var(--grey);
+}
+
+.differentials__item h3 {
+  font-size: 1.1rem;
+}
+
+.differentials__item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-light-muted);
+}
+
+@media (max-width: 1080px) {
+  .differentials__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .differentials__item:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .differentials__item:nth-child(n + 3) {
+    border-top: 1px solid var(--paper-line);
+  }
+}
+
+@media (max-width: 560px) {
+  .differentials__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .differentials__item + .differentials__item {
+    border-left: 0;
+    border-top: 1px solid var(--paper-line);
+  }
+}

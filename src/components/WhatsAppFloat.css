@@ -1,0 +1,92 @@
+.wa-float {
+  position: fixed;
+  right: clamp(16px, 2.4vw, 28px);
+  bottom: clamp(16px, 2.4vw, 28px);
+  z-index: 120;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  height: 54px;
+  padding: 0 20px 0 16px;
+  border-radius: 999px;
+  background: var(--steel-800);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.96);
+  transition: opacity var(--t-base) var(--ease), transform var(--t-base) var(--ease),
+    visibility var(--t-base) linear, background-color var(--t-fast) linear, border-color var(--t-fast) linear;
+}
+
+.wa-float.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.wa-float:hover {
+  background: var(--blue);
+  border-color: var(--blue-bright);
+}
+
+.wa-float__icon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: #25d366;
+  transition: color var(--t-fast) linear;
+}
+
+.wa-float:hover .wa-float__icon {
+  color: #fff;
+}
+
+.wa-float__text {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.wa-float__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 211, 102, 0.5);
+  animation: waRing 3400ms var(--ease) infinite;
+  pointer-events: none;
+}
+
+@keyframes waRing {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  55%,
+  100% {
+    opacity: 0;
+    transform: scale(1.16);
+  }
+}
+
+@media (max-width: 620px) {
+  .wa-float {
+    height: 52px;
+    width: 52px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .wa-float__text {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float__ring {
+    animation: none;
+    opacity: 0.4;
+  }
+}
