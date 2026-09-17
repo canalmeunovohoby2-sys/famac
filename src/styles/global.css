@@ -398,6 +398,23 @@ h4 {
   transition: transform 900ms var(--ease-out);
 }
 
+.media__backdrop {
+  position: absolute;
+  inset: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  filter: blur(42px) brightness(0.32) saturate(0.9);
+  transform: scale(1.12);
+  pointer-events: none;
+}
+
+.media--contain .media__img {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+}
+
 .media--zoom:hover .media__img {
   transform: scale(1.045);
 }

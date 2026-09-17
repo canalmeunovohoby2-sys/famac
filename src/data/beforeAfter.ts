@@ -23,7 +23,7 @@ export const beforeAfterItems: BeforeAfterItem[] = [
     label: 'Serviço realizado',
     service: 'Recuperação e usinagem de componente',
     description: 'Descreva aqui o serviço realizado neste trabalho.',
-    ratio: '3 / 4',
+    ratio: '7 / 8',
     before: {
       src: '/images/antes-01.jpeg',
       alt: 'Componente industrial antes do serviço da FAMAC Caldeiraria',

@@ -112,11 +112,11 @@ export function BeforeAfterSlider({
         onPointerCancel={handlePointerUp}
       >
         <div className="ba__layer">
-          <Media image={before} className="ba__media" priority={priority} showTag={false} />
+          <Media image={before} className="ba__media" priority={priority} showTag={false} fit="contain" />
         </div>
 
         <div className="ba__layer ba__layer--after">
-          <Media image={after} className="ba__media" showTag={false} />
+          <Media image={after} className="ba__media" showTag={false} fit="contain" />
         </div>
 
         <span className="ba__tag ba__tag--before">{labels.before}</span>

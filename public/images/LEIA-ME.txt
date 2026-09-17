@@ -24,9 +24,13 @@ AINDA PENDENTES (o site mostra um marcador enquanto o arquivo não existe)
   (essas fotos não aparecem no site hoje, o card da direita mostra o vídeo)
 
 Observações
-- Cada foto da galeria e do Antes/Depois tem a proporção configurada no
-  arquivo de dados (campo "ratio"). Se trocar por uma foto de outro formato,
-  ajuste o "ratio" para ela não ser cortada.
+- Cada foto da galeria tem a proporção configurada no arquivo de dados
+  (campo "ratio"). Se trocar por uma foto de outro formato, ajuste o "ratio"
+  para ela não ser cortada.
+- No ANTES E DEPOIS as duas fotos são exibidas por inteiro (sem corte), com
+  fundo desfocado preenchendo o quadro. Se as fotos ANTES e DEPOIS tiverem o
+  mesmo enquadramento e a mesma proporção, avise que eu ativo o modo de
+  preenchimento total (mais impactante).
 - Recomendado: JPG, lado maior entre 1600px e 2200px, até ~500 KB por arquivo.
 - Nomes com espaço (ex.: "PROJETO 1.jpeg" e "VIDEO 2.mp4") funcionam normalmente.
 - Existe uma cópia de vídeo em images/VIDEO.mp4 que não está sendo usada;

@@ -118,6 +118,7 @@ export function BeforeAfter() {
                 image={active.before}
                 className="lightbox__pair-media"
                 ratio={active.ratio ?? '4 / 3'}
+                fit="contain"
               />
               <figcaption>{beforeAfterLabels.before}</figcaption>
             </figure>
@@ -126,6 +127,7 @@ export function BeforeAfter() {
                 image={active.after}
                 className="lightbox__pair-media"
                 ratio={active.ratio ?? '4 / 3'}
+                fit="contain"
               />
               <figcaption>{beforeAfterLabels.after}</figcaption>
             </figure>
