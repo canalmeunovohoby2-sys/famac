@@ -115,4 +115,40 @@ export const projects: ProjectItem[] = [
       placeholder: 'Adicione a foto do projeto',
     },
   },
+  {
+    id: 'projeto-10',
+    title: 'Projeto 10',
+    category: '',
+    description: '',
+    ratio: '4 / 3',
+    image: {
+      src: '/images/PROJETO 10.jpeg',
+      alt: 'Serviço industrial executado pela FAMAC Caldeiraria',
+      placeholder: 'Adicione a foto do projeto',
+    },
+  },
+  {
+    id: 'projeto-11',
+    title: 'Projeto 11',
+    category: '',
+    description: '',
+    ratio: '4 / 3',
+    image: {
+      src: '/images/PROJETO 11.jpeg',
+      alt: 'Fabricação metálica realizada pela FAMAC Caldeiraria',
+      placeholder: 'Adicione a foto do projeto',
+    },
+  },
+  {
+    id: 'projeto-12',
+    title: 'Projeto 12',
+    category: '',
+    description: '',
+    ratio: '4 / 3',
+    image: {
+      src: '/images/PROJETO 12.jpeg',
+      alt: 'Componente industrial recuperado pela FAMAC Caldeiraria',
+      placeholder: 'Adicione a foto do projeto',
+    },
+  },
 ]

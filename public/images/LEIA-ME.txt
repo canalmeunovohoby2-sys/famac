@@ -18,6 +18,9 @@ EM USO
   PROJETO 7.jpeg
   PROJETO 8.jpeg
   PROJETO 9.jpeg
+  PROJETO 10.jpeg
+  PROJETO 11.jpeg
+  PROJETO 12.jpeg
 
   public/VIDEO.mp4          Seção Serviços (vídeo em loop, sem som)
 
